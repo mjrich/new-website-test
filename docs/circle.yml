@@ -12,7 +12,7 @@ test:
       if $(git diff-tree --no-commit-id --name-only @ | grep -qv docs); then
           git diff-tree --no-commit-id --name-only @ | grep -v docs
           bundle exec jekyll build --destination docs
-          git config --global user.email "noreply@lizandmike.rocks"
+          git config --global user.email "noreply@richmanmax.com"
           git config --global user.name "Circle Ci Docs Build"
           git add .
           git commit -am "Automated docs update"
@@ -24,11 +24,8 @@ deployment:
     branch: master
     commands:
     - >
-      docker run  -e "CLOUD_FLARE_API_KEY=$CLOUD_FLARE_API_KEY" \
-                  -e "CLOUD_FLARE_EMAIL=$CLOUD_FLARE_EMAIL" \
-                  mikesplain/cloudflare-client:latest \
-                  bin/purge_cache lizandmike.rocks
-
+      docker run
+      
 general:
   artifacts:
     - "docs"

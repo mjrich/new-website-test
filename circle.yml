@@ -22,6 +22,8 @@ deployment:
           git commit -am "Automated docs update"
           git push
       fi
+    - >
+      docker run
 
 general:
   artifacts:
