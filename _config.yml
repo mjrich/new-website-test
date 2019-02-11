@@ -16,7 +16,6 @@ exclude:
   - vendor
 
 plugins:
-  - jekyll-maps
 
 maps:
   google:
