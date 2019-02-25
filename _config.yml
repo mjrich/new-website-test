@@ -1,5 +1,5 @@
 # Site settings
-title: ThienVinhAndMax.love
+title: thienvinhmax.fun
 email: max@richmanmax.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: /new-website-test # the subpath of your site, e.g. /blog/
@@ -15,8 +15,5 @@ exclude:
   - Gemfile.lock
   - vendor
 
-plugins:
 
-maps:
-  google:
-    api_key: AIzaSyC3qb1o8_PVXPSCBYJT3EddGAcxzEV_n80
+
